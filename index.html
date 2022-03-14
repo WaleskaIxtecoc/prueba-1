@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>EXAMEN</title>
+<script>
+function comprobarClave(){
+    clave1 = document.f1.clave1.value
+    clave2 = document.f1.clave2.value
+     
+
+    if (clave1 == "Waleska" && clave2 == "Ixtecoc"){
+       alert("Los Datos Coinciden...\n Bienvenido");
+        var href =  "dos.html";
+        window.location=href;
+         }
+       
+    else{
+       alert("Las dos claves son distintas...\nIntentelo nuevamente.");
+        var href =  "index.html";
+        window.location=href;
+    };
+       
+}  
+</script>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<center>
+<body>
+
+<h1><center><font color="black">Ingresa las Contraseñas para acceder al sitio web...</font></center></h1>
+<br>
+<hr>
+<h1><font color="black">Escribe una supuesta contraseña dos veces, una en cada campo, y pulsa el botón. Javascript te dirá si las dos son iguales.</font></h1>
+
+<br>
+<hr>
+
+<form action="" name="f1">
+    <ul>
+        <li><font color="black">Contraseña:<input type="password" name="clave1" size="20"></font></li>
+        <br>
+        <li><font color="black">Repite contraseña:<input type="password" name="clave2" size="20"></font></li>
+        <br>
+        <li><input type="button" value="Comprobar si son iguales" onClick="comprobarClave()"></li>
+</ul></form>
+
+</body>
+</html>
